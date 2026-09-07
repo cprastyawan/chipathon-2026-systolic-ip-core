@@ -1,4 +1,6 @@
-module chip_core (clk,
+module chip_core (VDD,
+    VSS,
+    clk,
     clk_PD,
     clk_PU,
     input_in_0,
@@ -67,9 +69,9 @@ module chip_core (clk,
     output_out_3_SL,
     rst_n,
     rst_n_PD,
-    rst_n_PU,
-    VDD,
-    VSS);
+    rst_n_PU);
+ inout VDD;
+ inout VSS;
  input clk;
  output clk_PD;
  output clk_PU;
@@ -140,8 +142,6 @@ module chip_core (clk,
  input rst_n;
  output rst_n_PD;
  output rst_n_PU;
- inout VDD;
- inout VSS;
 
  wire _00000_;
  wire _00001_;
@@ -27343,42 +27343,7 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_29 (.I(net2103),
-    .VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
  gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_3 (.I(\chip_core_internal_i.systolic_i.output_dp.feeder_i_e.shift_reg[199] ),
-    .VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_30 (.I(net2023),
-    .VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_31 (.I(net2103),
-    .VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_32 (.I(net2023),
-    .VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_33 (.I(net2023),
-    .VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_34 (.I(net2023),
-    .VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__antenna ANTENNA_35 (.I(net2023),
     .VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
@@ -52673,23 +52638,7 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_139_1594 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_139_1602 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_139_1604 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_139_1607 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_139_1609 (.VDD(VDD),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_139_1594 (.VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
@@ -53769,23 +53718,7 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_140_1602 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_140_1604 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_140_1607 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_140_1615 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_140_1617 (.VDD(VDD),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_140_1602 (.VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
@@ -54489,11 +54422,7 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_141_1601 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_141_1607 (.VDD(VDD),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_141_1601 (.VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
@@ -55773,15 +55702,7 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_143_1591 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_143_1599 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_143_1603 (.VDD(VDD),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_143_1591 (.VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
@@ -62349,11 +62270,7 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_153_1601 (.VDD(VDD),
-    .VNW(VDD),
-    .VPW(VSS),
-    .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_153_1607 (.VDD(VDD),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_153_1601 (.VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
@@ -189073,6 +188990,10 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_328_592 (.VDD(VDD),
+    .VNW(VDD),
+    .VPW(VSS),
+    .VSS(VSS));
  gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_328_594 (.VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
@@ -198081,7 +198002,7 @@ module chip_core (clk,
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_341_834 (.VDD(VDD),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_341_834 (.VDD(VDD),
     .VNW(VDD),
     .VPW(VSS),
     .VSS(VSS));

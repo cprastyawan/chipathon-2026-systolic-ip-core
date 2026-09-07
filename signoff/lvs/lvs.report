@@ -53,22 +53,6 @@ VSS                                        |VSS
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_4 and gf180mcu_fd_sc_mcu7t5v0__fillcap_4 are equivalent.
 
-Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VDD
-Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VNW
-Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VPW
-Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VSS
-
-Subcircuit pins:
-Circuit 1: gf180mcu_fd_sc_mcu7t5v0__fillca |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__fillca 
--------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
-VNW                                        |VNW                                        
-VPW                                        |VPW                                        
-VSS                                        |VSS                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_64 and gf180mcu_fd_sc_mcu7t5v0__fillcap_64 are equivalent.
-
 Cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 (0) disconnected node: D
 Cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 (0) disconnected node: CLK
 Cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 (0) disconnected node: Q
@@ -90,6 +74,22 @@ VSS                                        |VSS
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu7t5v0__dffq_1 and gf180mcu_fd_sc_mcu7t5v0__dffq_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__fillca |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__fillca 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_64 and gf180mcu_fd_sc_mcu7t5v0__fillcap_64 are equivalent.
 
 Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: A1
 Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: A2
@@ -2499,8 +2499,8 @@ Circuit 1: chip_core                       |Circuit 2: chip_core
 gf180mcu_fd_sc_mcu7t5v0__nor2_1 (2390)     |gf180mcu_fd_sc_mcu7t5v0__nor2_1 (2390)     
 gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (6262-> |gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (6262-> 
 gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (17714- |gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (17714- 
-gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (9170- |gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (9170- 
 gf180mcu_fd_sc_mcu7t5v0__dffq_1 (2216)     |gf180mcu_fd_sc_mcu7t5v0__dffq_1 (2216)     
+gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (9170- |gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (9170- 
 gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (1525)    |gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (1525)    
 gf180mcu_fd_sc_mcu7t5v0__nand4_1 (124)     |gf180mcu_fd_sc_mcu7t5v0__nand4_1 (124)     
 gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (3960- |gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (3960- 

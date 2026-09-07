@@ -58,3 +58,15 @@ GND_NETS:
 - VSS
 PDN_CFG: dir::pdn_cfg_a34.tcl
 
+# A34 top-level power ring
+# Localized M2-M3-M4 bridges connect the boundary pads to this M4/M5 PDN.
+PDN_CORE_RING: true
+PDN_CORE_RING_ALLOW_OUT_OF_DIE: false
+PDN_CORE_RING_CONNECT_TO_PADS: false
+PDN_CORE_RING_VOFFSET: 0.8
+PDN_CORE_RING_HOFFSET: 0.8
+PDN_CORE_RING_VWIDTH: 1.6
+PDN_CORE_RING_HWIDTH: 1.6
+PDN_CORE_RING_VSPACING: 1.7
+PDN_CORE_RING_HSPACING: 1.7
+PDN_EXTEND_TO: core_ring
